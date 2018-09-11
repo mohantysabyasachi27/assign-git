@@ -1,0 +1,24 @@
+Create a new file called answers.txt paste the following questions into the file and push
+it to your remote repository:
+•
+What is a gitignore file and what should it include for a Java project?
+• A gitignore file tells git to ignore certain files in the repository. These are the files that is not revelant to the project, or are not necessary to run the project like env specific files. 
+Below is the list of the files that the gitignore with exclude with java option
+
+1. Class Files --  *.class
+2. Log files -- *.log
+3. BlueJ files -- *.ctxt
+4. Mobile Tools for Java (J2ME) -- .mtj.tmp/
+5. Package Files - *.jar, *.war, *.nar, *.ear , *.zip, *.tar.gz, *.rar
+
+What does fast-forward in Git mean?
+• If a feature branch is forked from the master branch. And if the master branch has not diverged since then, while merging the feature branch to the master branch, git will just point the master to the latest commit of the feature branch. This is known as fast-forward merge. And this happens only if the master has not diverged after the feature branch was carved out of it. We can also explicitly ask git not to fast-forward by passing the '--no-ff' which then creates a new merge commit even if the git would have fast-forwarded it normally. 
+
+Why should you have different branches?
+• In a real world project, there are multiple contexts where the work happens. Every product feature or a bugfix or even an experiment/poc has a context of its own for example the context for the new feature may be the current sprint but the context for the bug fix might be from an earlier sprint or an issue in the production. So work always happens in multiple of these contexts in parallel. And the branch concept in git enables you to work on multiple things in multiple contexts. Also different people in the same propject can collaborate, and without affecting each other.A branch represents a context in a project which is isolated from other contexts.
+
+In a project how many remote Git repositories do you usually have?
+• The number of repositories in a project depends on the the number of independent components of the project. If you have a megalith architechture where you just have one large component then the number of git repositories needed is one. But if you have microservices architechture where there are a number of independent compenents within the project then it will need multiple repostitories each storing a different component. 
+
+
+
